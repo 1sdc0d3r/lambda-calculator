@@ -1,12 +1,106 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  background-color: green;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.display {
+  margin-top: 25px;
+  height: 100px;
+  width: 350px;
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  -webkit-box-shadow: 1px 1px #322c2d;
+          box-shadow: 1px 1px #322c2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 2%;
+  padding-right: 8%;
+  font-size: 5rem;
 }
+
+.buttons {
+  padding: 10%;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.specials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.operators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 2em;
+  color: ivory;
+}
+
+.number-button {
+  background-color: #003c76;
+  margin: 5px;
+}
+
+.special-button {
+  background-color: #0061ad;
+  margin: 5px;
+}
+
+.operator-button {
+  background-color: #00b5e2;
+  margin-top: 9px;
+}
+
+.numbers button:nth-child(10) {
+  border-radius: 50px;
+  width: 150px;
+}
+
+.logo {
+  margin: 15px;
+}
+/*# sourceMappingURL=index.css.map */
