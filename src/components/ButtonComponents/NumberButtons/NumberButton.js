@@ -1,12 +1,14 @@
 import React from "react";
-import data from "../../../data";
-console.log(data);
+
 const NumberButton = props => {
-  const { data } = props;
+  // console.log(props);
+  const { value, key } = props;
   return (
     <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-      <button>{data.numbers[0]}</button>
+      <button className="button number-button">
+        {value}
+        {key}
+      </button>
     </>
   );
 };
