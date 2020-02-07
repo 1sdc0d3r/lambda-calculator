@@ -10,9 +10,11 @@ const Numbers = props => {
   const [buttonNumber, setButtonNumber] = useState(numbers);
   return (
     <div className="numsDiv">
-      {buttonNumber.map((e, i) => {
-        // console.log(e, i, props);
-        return <NumberButton value={e} key={i} />;
+      {buttonNumber.map(e => {
+        // console.log(e, props);
+        console.log(e);
+
+        return <NumberButton value={e} />;
       })}
     </div>
   );

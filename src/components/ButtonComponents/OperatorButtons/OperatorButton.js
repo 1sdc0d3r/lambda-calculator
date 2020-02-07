@@ -2,9 +2,10 @@ import React from "react";
 
 const OperatorButton = props => {
   console.log(props);
+  const { value } = props;
   return (
     <>
-      <button className="button operator-button">{props.value}</button>
+      <button className="button operator-button">{value}</button>
     </>
   );
 };
